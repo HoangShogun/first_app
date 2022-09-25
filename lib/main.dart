@@ -116,6 +116,7 @@
 
 //Start
 import 'package:flutter/material.dart';
+import 'manage_star.dart';
 
 void main(){
   runApp(const MyApp());
@@ -156,12 +157,9 @@ class MyApp extends StatelessWidget {
                 ],
               ),
           ),
+
           /*3*/
-          Icon(
-            Icons.star,
-            color: Colors.red[500],
-          ),
-          const Text('41'),
+          const AppStar(),
         ],
       ),
     );
@@ -227,7 +225,7 @@ class MyApp extends StatelessWidget {
             Image.asset(
               'images/lake.jpg',
               width: 600,
-              height: 400,
+              height: 240,
               fit: BoxFit.cover,
             ),
             titleSection,
